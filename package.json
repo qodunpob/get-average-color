@@ -1,0 +1,42 @@
+{
+  "name": "get-average-color",
+  "version": "0.0.0",
+  "description": "Get average color from image in browser environment",
+  "main": "lib/index.js",
+  "scripts": {
+    "fix": "standard --fix",
+    "start": "webpack-dev-server",
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bashkos/get-average-color.git"
+  },
+  "keywords": [
+    "image",
+    "color",
+    "palette",
+    "dominant",
+    "average",
+    "util",
+    "tool"
+  ],
+  "author": "bashkos <bashkos@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bashkos/get-average-color/issues"
+  },
+  "homepage": "https://github.com/bashkos/get-average-color#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-stage-0": "^6.24.1",
+    "rimraf": "^2.6.1",
+    "standard": "^10.0.2",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        ["env", { "modules": false }],
+        "stage-0"
+      ]
+    },
+    "production": {
+      "presets": ["env", "stage-0"]
+    }
+  }
+}
