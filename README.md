@@ -29,6 +29,8 @@ getAverageColor(image).then(rgb => console.log(rgb)) // { r: 66, g: 83, b: 25 }
 ## Demo
 Clone this repo, install all dependencies, then start the demo
 ```
+$ git clone git@github.com:bashkos/get-average-color.git
+$ cd get-average-color
 $ npm install
 $ npm start
 ```
