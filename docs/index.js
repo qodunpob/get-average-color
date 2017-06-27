@@ -7,5 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const image = colored.querySelector('img')
 
     getAverageColor(image.getAttribute('src'))
+      .then(rgb => { colored.style.backgroundColor = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})` })
   })
 })

@@ -7,10 +7,10 @@
 </head>
 <body>
   <h1>Get Average Color</h1>
-  <p class="caption">
-    This package provides a function called getAverageColor, which returns the
-    average color of the image whose url (or base64) will be passed as a
-    parameter.
+  <p>
+    This package provides a function called <code>getAverageColor</code>, which
+    returns in promise the YUV average color of the image, whose url (or base64)
+    will be passed as a parameter.
   </p>
   <ul class="photo-list">
     <li class="photo-list__item js-colored">
@@ -29,9 +29,23 @@
       <img src="img/5.jpg" role="presentation">
     </li>
     <li class="photo-list__item js-colored">
-      <img src="img/6.jpg" role="presentation">
+      <img src="https://unsplash.it/300/200/?random" role="presentation">
     </li>
   </ul>
+
+  <h2>Install</h2>
+  <pre class="code">npm i -S get-average-color</pre>
+
+  <h2>Usage</h2>
+  <pre class="code">
+import getAverageColor from 'get-average-color'
+import image from './img/myCoolImage'
+
+getAverageColor(image).then(rgb => console.log(rgb)) // { r: 66, g: 83, b: 25 }</pre>
+
+  <h2>License</h2>
+  <p>MIT.</p>
+
   <script src="bundle.js"></script>
 </body>
 </html>
