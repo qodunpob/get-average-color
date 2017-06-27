@@ -1,6 +1,6 @@
 {
   "name": "get-average-color",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Get average color from image in browser environment",
   "main": "lib/index.js",
   "scripts": {
