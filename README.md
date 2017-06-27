@@ -21,7 +21,7 @@ npm i -S get-average-color
 
 ```JavaScript
 import getAverageColor from 'get-average-color'
-import image from './img/myCoolImage'
+import image from './img/myCoolImage.jpg'
 
 getAverageColor(image).then(rgb => console.log(rgb)) // { r: 66, g: 83, b: 25 }
 ```
