@@ -5,7 +5,7 @@
 
 > Get average color from image in browser environment
 
-This package provides a function called getAverageColor, which returns in promise
+This package provides a function called `getAverageColor`, which returns in promise
 the YUV average color of the image, whose url (or base64) will be passed as a
 parameter.
 
@@ -13,7 +13,7 @@ parameter.
 
 ## Install
 
-```
+```bash
 npm i -S get-average-color
 ```
 
