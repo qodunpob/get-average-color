@@ -13,8 +13,8 @@ parameter.
 
 ## Install
 
-```bash
-npm i -S get-average-color
+```
+$ npm i -S get-average-color
 ```
 
 ## Usage
@@ -24,6 +24,13 @@ import getAverageColor from 'get-average-color'
 import image from './img/myCoolImage.jpg'
 
 getAverageColor(image).then(rgb => console.log(rgb)) // { r: 66, g: 83, b: 25 }
+```
+
+## Demo
+Clone this repo, install all dependencies, then start the demo
+```
+$ npm install
+$ npm start
 ```
 
 ## License
