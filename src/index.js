@@ -1,9 +1,10 @@
+const removeImage = image => image.parentNode.removeChild(image)
+
 const getColor = imageData => {
   const rgb = { r: 0, g: 0, b: 0 }
   const yuv = { y: 0, u: 0, v: 0 }
   const sigma = x => x / (Math.abs(x) + 0.4)
-  // const step = Math.ceil(imageData.data.length / 10000)
-  const step = 4
+  const step = Math.ceil(imageData.data.length / 40000) * 4
   let count = 0
 
   for (var i = 0; i < imageData.data.length; i += step) {
@@ -39,6 +40,9 @@ const getImageData = image => {
   const { width, height } = image
   if (width > 0 && height > 0) {
     const canvas = document.createElement('canvas')
+    canvas.width = width
+    canvas.height = height
+
     const context = canvas.getContext('2d')
     context.fillStyle = 'rgb(255, 255, 255)'
     context.fillRect(0, 0, width, height)
@@ -54,8 +58,6 @@ const getImageData = image => {
     removeImage(image)
   }
 }
-
-const removeImage = image => image.parentNode.removeChild(image)
 
 const onLoad = (image, resolve, reject) => {
   const imageData = getImageData(image)
