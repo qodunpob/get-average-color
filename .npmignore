@@ -1,4 +1,5 @@
 docs/
+docs-dist/
 src/
 .babelrc
 preview.jpg

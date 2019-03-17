@@ -4,13 +4,14 @@
   "description": "Get average color from image in browser environment",
   "main": "lib/index.js",
   "scripts": {
-    "build": "npm run clean && npm run build:lib",
+    "build": "npm run build:clean && npm run build:lib",
     "build:lib": "babel src -d lib",
-    "clean": "rimraf lib",
+    "build:clean": "rimraf lib",
     "fix": "standard --fix",
     "start": "webpack-dev-server",
     "test": "standard",
-    "version": "npm run build"
+    "version": "npm run build",
+    "build-docs": "rimraf docs-dir && NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
@@ -38,9 +39,11 @@
     "babel-loader": "^7.1.0",
     "babel-preset-env": "^1.5.2",
     "babel-preset-stage-0": "^6.24.1",
+    "copy-webpack-plugin": "^4.6.0",
     "rimraf": "^2.6.1",
     "standard": "^10.0.2",
     "webpack": "^3.0.0",
-    "webpack-dev-server": "^2.5.0"
+    "webpack-dev-server": "^2.5.0",
+    "webpack-merge": "^4.2.1"
   }
 }
